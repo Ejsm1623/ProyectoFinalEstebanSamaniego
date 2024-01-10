@@ -1,0 +1,28 @@
+/* Sección del Encabezado */
+
+h1 {
+    color: #fcc5da !important;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: lighter !important;
+  }
+  
+  #introduction p {
+    text-align: justify;
+  }
+  
+  /* Botón del encabezado */
+  #header-button {
+    color: #fff;
+    border: none;
+    border-radius: 5px 20px;
+    background: #fcc5da;
+    letter-spacing: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    #head-logo {
+      width: 70% !important;
+    }
+  }
+  

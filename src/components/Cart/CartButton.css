@@ -4,6 +4,10 @@
     border-color: #FFF !important;
 }
 
+.cartImage {
+  height: 32px;
+}
+
 .cart-button-container {
     position: relative;
   }

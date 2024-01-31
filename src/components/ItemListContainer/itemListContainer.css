@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.categoryList {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.categoryList li {
+    font-weight: lighter;
+}

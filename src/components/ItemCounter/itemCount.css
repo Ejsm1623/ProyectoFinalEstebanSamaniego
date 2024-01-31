@@ -1,0 +1,28 @@
+.addCartBtnWrapper {
+    background: white;
+    border: 2px solid #EEE;
+    width: 150px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.decrementBtn, .addBtn {
+    background: none;
+    color: pink;
+    font-weight: bolder;
+    border: none;
+}
+
+.addCartBtn {
+    border: 2px solid pink;
+    background-color: white;
+    border-radius: 6px;
+    padding: 0px 20px;
+}

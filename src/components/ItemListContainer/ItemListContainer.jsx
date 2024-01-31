@@ -1,16 +1,25 @@
-import React from 'react';
+import productsData from "../../products/products.json";
+import React, { useState, useEffect } from "react";
+import ItemList from "../Items/ItemList";
+import { useParams } from "react-router-dom";
 
-export default function ItemListContainer({ greetings }) {
-    const greetingsStyles = {
-        color: '#fcc5da',
-        fontSize: '16px',
-        fontStyle: 'cursive',
-        textAlign: 'center'
-    };
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+  const {categoryid} = useParams();
+  console.log(categoryid)
 
-    return (
-        <div>
-            <h2 style={greetingsStyles}>{greetings}</h2>
-        </div>
-    );
-}
+useEffect(() => {
+  const promesa = new Promise ((resolve) => {
+    resolve(categoryid ? productsData.filter(item => item.categoria === categoryid) : productsData)
+  })
+
+  promesa.then (productsData => {
+    setProductos(productsData)
+  })
+}, [categoryid]);
+
+
+  return <ItemList productos={productos} />;
+};
+
+export default ItemListContainer;

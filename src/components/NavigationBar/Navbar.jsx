@@ -1,14 +1,15 @@
 import React from "react";
 import "./navbar.css";
 import CartButton from "../Cart/CartButton.jsx"; // Importa el componente CartButton
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <header className="container-fluid nav-container">
       <nav className="navbar navbar-expand-lg bg-body-light" id="custom-navbar">
-        <a className="navbar-brand d-md-block d-lg-none" href="#">
+        <Link to={"/"} className="navbar-brand d-md-block d-lg-none" href="#">
           <span className="navbar-title" id="navbar-brandtitle">CraftMania Shop</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,18 +24,20 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-uppercase fw-light">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active mx-3"
                 aria-current="page"
                 href="#"
+
+                to={"/"}
               >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <Link to={"category/"} className="nav-link mx-3" href="#">
                 Catalogo
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link mx-3" href="#">

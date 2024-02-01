@@ -23,7 +23,7 @@ export default function itemCounter({ stock, initial, onAdd }) {
   };
 
   return (
-    <div className="buttonsWrapper">
+    <div className="buttonsWrapper p-4 gap-4">
       <div className="addCartBtnWrapper">
         <button className="decrementBtn" onClick={handleDecrement}>
           -
@@ -33,7 +33,7 @@ export default function itemCounter({ stock, initial, onAdd }) {
           +
         </button>
       </div>
-      <button className="addCartBtn" onClick={handleAdd} disabled={count === 0}>
+      <button type="button" className="btn btn-primary" disabled={count === 0}>
         Agregar al carrito
       </button>
     </div>

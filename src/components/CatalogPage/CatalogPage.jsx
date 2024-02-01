@@ -1,6 +1,6 @@
-import productsData from "../../products/products.json";
+import productsData from "../../jsondata/products.json";
 import React, { useState, useEffect } from "react";
-import ItemList from "../Items/ItemList";
+import CatalogItemList from "./CatalogItem.jsx";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
@@ -19,7 +19,7 @@ useEffect(() => {
 }, [categoryid]);
 
 
-  return <ItemList productos={productos} />;
+  return <CatalogItemList productos={productos} />;
 };
 
 export default ItemListContainer;

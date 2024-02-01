@@ -1,7 +1,7 @@
 import {} from 'react';
 import { Link } from 'react-router-dom';
 
-export default function CategorySeacher () {
+export default function CatalogNav () {
 return (
     <div className='container-fluid justify-content-center d-flex'>
         <ul className="nav">

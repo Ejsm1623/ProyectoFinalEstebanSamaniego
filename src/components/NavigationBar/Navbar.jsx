@@ -1,6 +1,6 @@
 import React from "react";
-import "./navbar.css";
-import CartButton from "../Cart/CartButton.jsx"; // Importa el componente CartButton
+import "./css/navbar.css";
+import CartButton from "../Buttons/Cart/CartBtn.jsx"; // Importa el componente CartButton
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
@@ -27,36 +27,34 @@ export default function NavBar() {
               <Link
                 className="nav-link active mx-3"
                 aria-current="page"
-                href="#"
-
                 to={"/"}
               >
                 Inicio
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={"category/"} className="nav-link mx-3" href="#">
+              <Link to={"category/"} className="nav-link mx-3">
                 Catalogo
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <a className="nav-link mx-3">
                 Sobre Nosotros
               </a>
+              <li>
+              </li>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <a className="nav-link mx-3">
                 Entregas & Pedidos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <a className="nav-link mx-3">
                 Contacto
               </a>
             </li>
           </ul>
-
-          {/* Añade el componente CartButton directamente en la barra de navegación */}
           <CartButton />
         </div>
       </nav>

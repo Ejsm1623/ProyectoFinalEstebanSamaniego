@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./CartButton.css";
-import cartIcon from "../../assets/carrito-de-compras.png";
+import "./cartBtn.css";
+import cartIcon from "../../../assets/cartIcon.png";
 
 const CartButton = () => {
   const [isExpanded, setExpanded] = useState(false);

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import productsData from "../../products/products.json";
-import ItemCount from "../ItemCounter/ItemCounter";
+import productsData from "../../jsondata/products.json";
+import ItemCount from "../Buttons/ItemCounter/ItemCounter";
 
-const ItemDetailContainer = () => {
+const DetailedItemView = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -61,4 +61,4 @@ const ItemDetailContainer = () => {
   );
 };
 
-export default ItemDetailContainer;
+export default DetailedItemView;

@@ -1,9 +1,26 @@
-// Item.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import ItemCount from "../ItemCounter/ItemCounter";
+import ItemCount from "../Buttons/ItemCounter/ItemCounter";
+import CatalogNav from "./CatalogNav";
 
-const Item = ({ item }) => {
+const CatalogItemList = ({ productos }) => {
+  return (
+<div className="d-flex flex-column justify-content-center">
+ <CatalogNav/> 
+ <br />
+<div className="d-flex flex-wrap flex-row gap-5 px-4 pb-5">
+      {productos.map((producto) => (
+        <CatalogItem item={producto} />
+      ))}
+    </div>
+</div>
+  );
+}
+
+export default CatalogItemList;
+
+
+const CatalogItem = ({ item }) => {
   return (
     
       <div className="card" style={{ width: 25 + "rem" }}>
@@ -21,4 +38,3 @@ const Item = ({ item }) => {
   );
 };
 
-export default Item;

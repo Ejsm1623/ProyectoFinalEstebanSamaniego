@@ -1,0 +1,22 @@
+/* Estilo general para la barra de desplazamiento */
+body::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+    display: none;
+  }
+  
+  /* Estilo del "track" (la parte gris) */
+  body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo del track */
+  }
+  
+  /* Estilo del "thumb" (la parte desplazable) */
+  body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 6px; /* Bordes redondeados del thumb */
+  }
+  
+  /* Estilo del "corner" (la esquina) */
+  body::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* Color de fondo de la esquina */
+  }
+  

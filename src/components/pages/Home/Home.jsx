@@ -1,8 +1,8 @@
 import React from "react";
-import "./css/homePage.css";
-import craftManiaLogo from "../../assets/craftmania-logo-original.png";
+import "../../styles/home.css";
+import craftManiaLogo from "../../../assets/craftManiaLogo.png";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <section className="container-fluid" id="introduction">
       <div className="row flex-lg-wrap flex-wrap-reverse py-5">

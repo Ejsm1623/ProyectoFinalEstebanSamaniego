@@ -1,13 +1,9 @@
 import React from "react";
-import "./css/navbar.css";
-import CartButton from "../Buttons/Cart/CartBtn.jsx"; // Importa el componente CartButton
-import { Link, useLocation } from "react-router-dom";
-import Logo from "../logo.jsx";
+import "../../styles/navbar.css";
+import { Link } from "react-router-dom";
+import ShopCartButton from "../../Buttons/ShopCartButton";
 
-export default function NavBar() {
-  const currentLocation = useLocation();
-  const noRenderRoute = location.pathname === "/";
-
+export default function NavigationBar() {
   return (
     <header className="container-fluid nav-container">
       <nav className="navbar navbar-expand-lg bg-body-light" id="custom-navbar">
@@ -43,11 +39,6 @@ export default function NavBar() {
                 Catalogo
               </Link>
             </li>
-            {/* {!noRenderRoute && (
-              <li>
-                <Logo />
-              </li>
-            )} */}
             <li className="nav-item">
               <a className="nav-link mx-3">Entregas & Pedidos</a>
             </li>
@@ -55,7 +46,7 @@ export default function NavBar() {
               <a className="nav-link mx-3">Contacto</a>
             </li>
           </ul>
-          {/* <CartButton /> */}
+<ShopCartButton></ShopCartButton>
         </div>
       </nav>
     </header>

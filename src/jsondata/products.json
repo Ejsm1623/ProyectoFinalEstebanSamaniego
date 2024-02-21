@@ -1,52 +1,56 @@
 [
-    {
-      "id": 1,
-      "title": "Hoodies",
-      "categoria": "Abrigo",
-      "description": "Prenda textil en tallas de S a XL. Estampadas con tinta a altas temperaturas, tiene una alta duración y una definición de imagen baja/media.",
-      "price": 18.99,
-      "pictureUrl": "https://i.ibb.co/JvqsXKZ/Rectangle-1.png"
-    },
-    {
-      "id": 2,
-      "title": "T-Shirt DTF",
-      "categoria": "T-Shirt",
-      "description": "Vanguardia en los productos de estampado, se trata de una lamina de alta calidad con duración de hasta 50 lavadas y una calidad de imagen bastante alta.",
-      "price": 29.99,
-      "pictureUrl": "https://i.ibb.co/Lgp1BKk/Rectangle-4.png"
-    },
-    {
-      "id": 3,
-      "title": "T-Shirt",
-      "categoria": "T-Shirt",
-      "description": "Material de calidad media, hasta 40 lavadas en condiciones ajustadas. Una calidad de imagen media, con muy buenos colores.",
-      "price": 12.99,
-      "pictureUrl": "https://i.ibb.co/FBgWLhR/Rectangle-2.png"
-    },
-    {
-      "id": 4,
-      "categoria": "Gorra",
-      "title": "Gorra Blanca",
-      "description": "Suéter elegante con cuello alto",
-      "price": 9.99,
-      "pictureUrl": "https://i.ibb.co/cYJRmbD/Rectangle-5.png"
-    },
-    {
-      "id": 5,
-      "categoria": "T-Shirt",
-
-      "title": "T-Shirt de Lana",
-      "description": "Suéter suave y abrigado de lana",
-      "price": 49.99,
-      "pictureUrl": "https://i.ibb.co/BtnCrzg/Rectangle-6.png"
-    },
-    {
-      "id": 6,
-      "categoria": "T-Shirt",
-      "title": "T-Shirt Manga Larga",
-      "description": "Suéter casual con capucha",
-      "price": 34.99,
-      "pictureUrl": "https://i.ibb.co/CVpJd1P/Rectangle-3.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Hoodies",
+    "categoria": "Abrigo",
+    "description": "Prenda textil en tallas de S a XL. Estampadas con tinta a altas temperaturas, tiene una alta duración y una definición de imagen baja/media.",
+    "price": 18.99,
+    "pictureUrl": "https://i.ibb.co/JvqsXKZ/Rectangle-1.png",
+    "stock": 6
+  },
+  {
+    "id": 2,
+    "title": "T-Shirt DTF",
+    "categoria": "T-Shirt",
+    "description": "Vanguardia en los productos de estampado, trata de una lamina de calidad con duración de hasta 50 lavadas y una calidad de imagen bastante alta.",
+    "price": 29.99,
+    "pictureUrl": "https://i.ibb.co/Lgp1BKk/Rectangle-4.png",
+    "stock": 3
+  },
+  {
+    "id": 3,
+    "title": "T-Shirt",
+    "categoria": "T-Shirt",
+    "description": "Material de calidad media, hasta 40 lavadas en condiciones ajustadas. Una calidad de imagen media, con muy buenos colores.",
+    "price": 12.99,
+    "pictureUrl": "https://i.ibb.co/FBgWLhR/Rectangle-2.png",
+    "stock": 9
+  },
+  {
+    "id": 4,
+    "title": "Gorra Blanca",
+    "categoria": "Gorra",
+    "description": "Suéter elegante con cuello alto",
+    "price": 9.99,
+    "pictureUrl": "https://i.ibb.co/cYJRmbD/Rectangle-5.png",
+    "stock": 2
+  },
+  {
+    "id": 5,
+    "title": "T-Shirt de Lana",
+    "categoria": "T-Shirt",
+    "description": "Suéter suave y abrigado de lana",
+    "price": 49.99,
+    "pictureUrl": "https://i.ibb.co/BtnCrzg/Rectangle-6.png",
+    "stock": 7
+  },
+  {
+    "id": 6,
+    "title": "T-Shirt Manga Larga",
+    "categoria": "T-Shirt",
+    "description": "Suéter casual con capucha",
+    "price": 34.99,
+    "pictureUrl": "https://i.ibb.co/CVpJd1P/Rectangle-3.png",
+    "stock": 4
+  }
+]

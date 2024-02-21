@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./cartBtn.css";
-import cartIcon from "../../../assets/cartIcon.png";
+import "../styles/cartButton.css";
+import cartIcon from "../../assets/shoppingCartIcon.png";
 
-const CartButton = () => {
+const ShopCartButton = () => {
   const [isExpanded, setExpanded] = useState(false);
   const notificationCount = 3; // Número hardcodeado
 
@@ -37,4 +37,4 @@ const CartButton = () => {
   );
 };
 
-export default CartButton;
+export default ShopCartButton;

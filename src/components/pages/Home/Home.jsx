@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
-import craftManiaLogo from "../../../assets/craftManiaLogo.png";
+import craftManiaLogo from "../../../assets/craftmaniaLogo.png";
 
 export default function Home() {
   return (

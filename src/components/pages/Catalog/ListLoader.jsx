@@ -1,28 +1,23 @@
-import productsData from "../../../jsondata/products.json";
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList.jsx";
-import { useParams } from "react-router-dom";
+import { db } from "../../../firebase/config.js";
+import "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
+
 
 const ListLoader = () => {
   const [productos, setProductos] = useState([]);
-  const { categoryid: itemCategory } = useParams();
-
+  
   useEffect(() => {
-    const loadProducts = () => {
-      if (!itemCategory) {
-        // Si no hay categoría especificada, aplicar retraso de 2 segundos
-        setTimeout(() => {
-          setProductos(productsData);
-        }, 2000);
-      } else {
-        // Si hay categoría especificada, filtrar productos inmediatamente
-        const filteredProducts = productsData.filter((item) => item.categoria === itemCategory);
-        setProductos(filteredProducts);
-      }
+    const fetchProductos = async () => {
+      const productosRef = collection(db, "products");
+      const querySnapshot = await getDocs(productosRef);
+      const productosData = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      setProductos(productosData);
     };
 
-    loadProducts();
-  }, [itemCategory]);
+    fetchProductos();
+  }, []);
 
   return <ItemList productos={productos} />;
 };

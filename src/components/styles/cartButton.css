@@ -2,9 +2,9 @@
   background-color: #fff !important;
   border-color: #fff !important;
 }
-
 .cartImage {
-  height: 32px;
+  width: 32px !important; /* Ancho deseado */
+  height: 32px !important; /* Alto deseado */
 }
 
 .cart-button-container {

@@ -1,9 +1,11 @@
 import React from "react";
 import "../../styles/navbar.css";
-import { Link } from "react-router-dom";
-import ShopCartButton from "../../Buttons/ShopCartButton";
+import { Link, useLocation } from "react-router-dom";
+import CartIcon from "../../Buttons/CartIcon";
 
 export default function NavigationBar() {
+  const location = useLocation();
+
   return (
     <header className="container-fluid nav-container">
       <nav className="navbar navbar-expand-lg bg-body-light" id="custom-navbar">
@@ -27,15 +29,17 @@ export default function NavigationBar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-uppercase fw-light align-items-center">
             <li className="nav-item">
               <Link
-                className="nav-link active mx-3"
-                aria-current="page"
+                className={`nav-link mx-3 ${location.pathname === "/" ? "active" : ""}`}
                 to={"/"}
               >
                 Inicio
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={"category/"} className="nav-link mx-3">
+              <Link
+                className={`nav-link mx-3 ${location.pathname.startsWith("/category/") ? "active" : ""}`}
+                to={"/category/"}
+              >
                 Catalogo
               </Link>
             </li>
@@ -46,7 +50,7 @@ export default function NavigationBar() {
               <a className="nav-link mx-3">Contacto</a>
             </li>
           </ul>
-<ShopCartButton></ShopCartButton>
+          <CartIcon />
         </div>
       </nav>
     </header>
